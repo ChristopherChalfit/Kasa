@@ -7,7 +7,6 @@ import "./_Logements.sass";
 function Logements() {
   const { id } = useParams();
   const location = DataGallery.find((location) => location.id === id);
-
   if (!location) {
     return <Error/>
   } else {
@@ -23,8 +22,8 @@ function Logements() {
             title="Équipements"
             content={
               <ul>
-                {location.equipments.map((equipments, index) => (
-                  <li key={index}>{equipments}</li>
+                {location.equipments.map((equipements, index) => (
+                  <li key={index}>{equipements}</li>
                 ))}
               </ul>
             }

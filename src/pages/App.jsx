@@ -6,17 +6,19 @@ import Footer from '../components/Footer/Footer.jsx';
 import Logements from './Logements/Logements.jsx';
 import About from './About/About.jsx';
 import Datagallery from '../data/logements.json'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
-export default function App(){
+function App(){
     const [logement, setLogement]= useState(null)
-    {setLogement(Datagallery)}
+    useEffect(() => {
+      setLogement(Datagallery)
+    }, []);
     return(
     <Router>
 
       <Header/>
       <Routes> 
-      <Route path="/" element={< Home {...logement} />} />
+      <Route path="/" element={< Home logements={logement} />} />
       <Route path="/about" element={< About />} />
       <Route path="/logements/:id" element={< Logements />} />
       
@@ -26,3 +28,4 @@ export default function App(){
     </Router>
     )
 }
+export default App

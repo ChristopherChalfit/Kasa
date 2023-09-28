@@ -1,9 +1,8 @@
 import { Link } from 'react-router-dom'
 import Datagallery from '../../data/logements.json'
 import './Gallery.sass'
-function Footer({logements}) {
+function Gallery({logements}) {
     return (
-        
         <section className='logements'>
         <div className='logements__list'>
             {logements && logements.map((location) => (
@@ -19,5 +18,5 @@ function Footer({logements}) {
     )
   }
   
-  export default Footer
+  export default Gallery
   

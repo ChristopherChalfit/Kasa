@@ -20,7 +20,7 @@
     @include mobile
       border-radius: 5px
       padding: 4px 6px 4px 6px
-    & h2
+    h2
       font-size: 24px
       color: $text_white
       @include mobile
@@ -49,10 +49,10 @@
     @include mobile
       font-size: 12px
       line-height: 17px
-    &.open
-      margin-top: -6px
-      max-height: 400px
-      transition: max-height 0.6s ease-in-out, margin-top 0.5s ease-in-out
+  .open
+    margin-top: -6px
+    max-height: 400px
+    transition: max-height 0.6s ease-in-out, margin-top 0.5s ease-in-out
 .collapse .chevron-up
  transition: all 0.5s ease-in-out
 .collapse.open .chevron-up

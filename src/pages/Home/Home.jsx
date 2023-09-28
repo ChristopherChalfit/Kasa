@@ -6,7 +6,7 @@ function Home({logements}) {
     return (
       <main>
         <Banner page="home" content="Chez vous, partout et ailleurs"/>
-        <Gallery {...logements}/>
+        <Gallery logements={logements}/>
       </main>
     )
   }
