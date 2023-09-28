@@ -1,0 +1,27 @@
+@import '../../styles/_Var.sass'
+@import '../../styles/_Breakpoint.sass'
+.header
+    display: flex
+    flex-direction: row
+    margin: 50px auto
+    width: 80%
+    justify-content: space-between
+    @include mobile
+        width: 90%
+    &__navbar
+        display: flex
+        gap: 50px
+        align-items: center
+        @include mobile
+            align-items: right
+            gap: 20px
+        a
+            text-decoration: none
+            color: $main-color
+            &:active, &:hover
+                border-bottom: solid 2px $main-color
+            @include mobile
+                text-transform: uppercase
+                font-size: 12px
+                
+                                       

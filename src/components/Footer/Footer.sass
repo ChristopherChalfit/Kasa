@@ -1,0 +1,17 @@
+@import '../../styles/_Var.sass'
+@import '../../styles/_Breakpoint.sass'
+.footer
+    display: flex
+    flex-direction: column
+    width: 100%
+    background-color: $footer-color
+    align-items: center
+    gap: 25px
+    padding: 50px
+    @include mobile
+        height: 250px
+        padding: 80px
+    &__image
+        height: 39px
+    &__info
+        color:$text_white

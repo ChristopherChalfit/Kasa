@@ -1,0 +1,82 @@
+.logements {
+  background-color: #F6F6F6;
+  border-radius: 25px;
+  margin: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 80%;
+}
+@media (max-width: 767.99px) {
+  .logements {
+    background-color: white;
+    margin: 20px auto;
+    width: 90%;
+  }
+}
+.logements__list {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-around;
+  padding: 50px;
+  width: 100%;
+}
+@media (max-width: 767.99px) {
+  .logements__list {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0;
+  }
+}
+.logements__list-item {
+  position: relative;
+}
+.logements__list-item-card {
+  border-radius: 10px;
+  color: white;
+  display: block;
+  height: 340px;
+  width: 100%;
+}
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  .logements__list-item-card {
+    height: 220px;
+  }
+}
+@media (max-width: 767.99px) {
+  .logements__list-item-card {
+    height: 255px;
+  }
+}
+.logements__list-item-card .logements-cover {
+  border-radius: 10px;
+  height: 340px;
+}
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  .logements__list-item-card .logements-cover {
+    height: 220px;
+  }
+}
+@media (max-width: 767.99px) {
+  .logements__list-item-card .logements-cover {
+    height: 255px;
+  }
+}
+.logements__list-item-card .logements-title {
+  font-size: 18px;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  width: 90%;
+}
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  .logements__list-item-card .logements-title {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767.99px) {
+  .logements__list-item-card .logements-title {
+    font-size: 18px;
+    line-height: 25px;
+    width: 60%;
+  }
+}

@@ -1,0 +1,29 @@
+@import '../../styles/_Var.sass'
+@import '../../styles/_Breakpoint.sass'
+.banner
+    position: relative
+    margin: auto
+    width: 80%
+    @include mobile
+        width: 90%
+    &__image
+        border-radius: 25px
+        height: 223px
+        width: 100%
+        object-fit: cover
+        filter: brightness(80%)
+        @include mobile
+            height: 111px
+    &__content
+        font-size: 48px
+        text-align: center
+        position: absolute
+        top: 35%
+        width: 100%
+        color: $text_white
+        @include mobile
+            font-size: 24px
+            line-height: 24px
+            text-align: left
+            widows: 67%
+            left: 5%

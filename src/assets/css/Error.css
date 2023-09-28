@@ -1,0 +1,12 @@
+.errorpage {
+  align-items: center;
+}
+.errorpage img {
+  height: 263px;
+}
+.errorpage a {
+  color: #FF6060;
+}
+.errorpage a:active, .errorpage a:hover {
+  border-bottom: solid 2px #FF6060;
+}
