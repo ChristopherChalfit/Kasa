@@ -8,10 +8,10 @@ function Header() {
             <img src={Logo}></img>
         </NavLink>
         <nav className='header__navbar'>
-            <NavLink to="/">
+            <NavLink to="/Kasa/">
                 Accueil
             </NavLink>
-            <NavLink to="/about">
+            <NavLink to="/Kasa/about">
                 A Propos
             </NavLink>
         </nav>
