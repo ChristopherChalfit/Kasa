@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import Datagallery from '../../data/logements.json'
 import './Gallery.sass'
 function Gallery({logements}) {
     return (
