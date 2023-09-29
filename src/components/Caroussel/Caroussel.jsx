@@ -8,15 +8,18 @@ function Caroussel(){
         const location = DataGallery.find((location) => location.id === id)
         const [slide, setSlide] = useState(0)
         const prevPicture = () => {
-            setSlide(slide === 0 ? location.pictures.length - 1 : slide - 1)
+            updapte(-1) 
         }
     
         const nextPicture = () => {
-            setSlide(slide === location.pictures.length - 1 ? 0 : slide + 1)
+           updapte(+1)
+        }
+        const updapte=(value)=>{
+            // Modulo pour boucle infini
+            setSlide((slide + value + location.pictures.length) % location.pictures.length)
         }
         if (location.pictures.length > 1) {
             return (
-            
             <section className='carousel'>
                 <div className='carousel__container'>  
                     {location.pictures.map((picture, index) => (
