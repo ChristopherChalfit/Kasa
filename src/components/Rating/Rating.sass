@@ -1,0 +1,16 @@
+@import '../../styles/_Var'
+@import '../../styles/_Breakpoint'
+.rating
+    display: flex
+    gap: 5px
+    padding-top: 40px
+    @include mobile
+        padding: 0
+    .fa-star
+        height: 24px
+        @include mobile
+            height: 18px
+    .red
+        color: $main-color
+    .grey
+        color: #E3E3E3
