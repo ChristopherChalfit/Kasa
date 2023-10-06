@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as HashRouter, Route, Routes } from 'react-router-dom';
 import Header from '../components/Header/Header.jsx';
 import Error from './Error/Error.jsx';
 import Home from './Home/Home.jsx';
@@ -14,7 +14,7 @@ function App(){
       setLogement(Datagallery)
     }, []);
     return(
-    <Router>
+      <HashRouter basename="/Kasa">
       <Header/>
       <Routes> 
       <Route path="/Kasa/" element={< Home logements={logement} />} />
@@ -24,7 +24,7 @@ function App(){
       <Route path="/Kasa/*" element={< Error />} />
       </Routes>
       <Footer/>
-    </Router>
+    </HashRouter>
     )
 }
 export default App
