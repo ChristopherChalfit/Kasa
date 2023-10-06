@@ -7,15 +7,18 @@ import "./_Logements.sass";
 import Tag from "../../components/Tags/Tag";
 import Host from "../../components/Host/Host";
 import Rating from "../../components/Rating/Rating";
-function Logements() {
+function Logements({logement}) {
   const { id } = useParams();
-  const location = DataGallery.find((location) => location.id === id);
+  if(logement === undefined){
+    return <Error />;
+  }
+  const location = logement.find((location) => location.id === id);
   if (!location) {
     return <Error />;
   } else {
     return (
       <main className="logement">
-        <Caroussel />
+        <Caroussel image={location.pictures}/>
         <section className="logement--card">
           <div className="logement__container">
           <div className="logement--title">

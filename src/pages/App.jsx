@@ -9,18 +9,17 @@ import Datagallery from '../data/logements.json'
 import { useState, useEffect } from 'react';
 
 function App(){
-    const [logement, setLogement]= useState(null)
+    const [logement, setLogement]= useState()
     useEffect(() => {
       setLogement(Datagallery)
     }, []);
     return(
     <Router>
-
       <Header/>
       <Routes> 
       <Route path="/Kasa/" element={< Home logements={logement} />} />
       <Route path="/Kasa/about" element={< About />} />
-      <Route path="/Kasa/logements/:id" element={< Logements />} />
+      <Route path="/Kasa/logements/:id" element={< Logements logement= {logement}/>} />
       
       <Route path="*" element={< Error />} />
       </Routes>
