@@ -1,5 +1,5 @@
 import "./Footer.sass"
-import WhiteLogo from '../../assets/images/whiteLogo.svg'
+import WhiteLogo from '../../assets/images/WhiteLogo.svg'
 function Footer() {
     return (
         <footer className='footer'>
