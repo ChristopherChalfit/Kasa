@@ -14,7 +14,7 @@ function App(){
       setLogement(Datagallery)
     }, []);
     return(
-      <HashRouter basename="/Kasa">
+      <HashRouter>
       <Header/>
       <Routes> 
       <Route path="/Kasa/" element={< Home logements={logement} />} />
