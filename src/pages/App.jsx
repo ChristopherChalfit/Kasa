@@ -21,7 +21,7 @@ function App(){
       <Route path="/Kasa/about" element={< About />} />
       <Route path="/Kasa/logements/:id" element={< Logements logement= {logement}/>} />
       
-      <Route path="*" element={< Error />} />
+      <Route path="/Kasa/*" element={< Error />} />
       </Routes>
       <Footer/>
     </Router>
