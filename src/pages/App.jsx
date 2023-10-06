@@ -13,7 +13,7 @@ function App() {
     setLogement(Datagallery);
   }, []);
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Kasa">
       <Header />
       <Routes>
         <Route path="/Kasa" element={<Home logements={logement} />} />
