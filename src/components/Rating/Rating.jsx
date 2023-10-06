@@ -1,5 +1,4 @@
 import "./Rating.sass";
-import Star from "../../assets/images/Stars.svg";
 function Rating({ rating }) {
   const maxStar = 5;
   const Stars = [];
