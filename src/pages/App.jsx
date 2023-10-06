@@ -16,10 +16,10 @@ function App() {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/" element={<Home logements={logement} />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/Kasa" element={<Home logements={logement} />} />
+        <Route path="/Kasa/about" element={<About />} />
         <Route
-          path="/logements/:id"
+          path="/Kasa/logements/:id"
           element={<Logements logement={logement} />}
         />
 
