@@ -1,5 +1,4 @@
-import { BrowserRouter as HashRouter, Route, Routes } from "react-router-dom";
-import Header from "../components/Header/Header.jsx";
+import { BrowserRouter, Route, Routes } from "react-router-dom";import Header from "../components/Header/Header.jsx";
 import Error from "./Error/Error.jsx";
 import Home from "./Home/Home.jsx";
 import Footer from "../components/Footer/Footer.jsx";
@@ -14,7 +13,7 @@ function App() {
     setLogement(Datagallery);
   }, []);
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Header />
       <Routes>
         <Route path="/" element={<Home logements={logement} />} />
@@ -27,7 +26,7 @@ function App() {
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 export default App;
