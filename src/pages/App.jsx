@@ -17,11 +17,11 @@ function App(){
       <HashRouter>
       <Header/>
       <Routes> 
-      <Route path="/Kasa/" element={< Home logements={logement} />} />
-      <Route path="/Kasa/about" element={< About />} />
-      <Route path="/Kasa/logements/:id" element={< Logements logement= {logement}/>} />
+      <Route path="/" element={< Home logements={logement} />} />
+      <Route path="/about" element={< About />} />
+      <Route path="/logements/:id" element={< Logements logement= {logement}/>} />
       
-      <Route path="/Kasa/*" element={< Error />} />
+      <Route path="*" element={< Error />} />
       </Routes>
       <Footer/>
     </HashRouter>
