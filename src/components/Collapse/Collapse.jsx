@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import ArrowTop from '../../assets/images/ArrowTop.svg'
+import ArrowTop from '../../assets/images/ArrowTop.webp'
 import './Collapse.sass'
 function Collapse({title, content}){
     const [isOpen, setIsOpen] = useState(false)

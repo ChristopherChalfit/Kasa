@@ -1,7 +1,7 @@
 
 import React from 'react'
-import BannerImgHome from '../../assets/images/BannerHome.svg'
-import BannerImgAbout from '../../assets/images/BannerAbout.svg'
+import BannerImgHome from '../../assets/images/BannerHome.webp'
+import BannerImgAbout from '../../assets/images/BannerAbout.webp'
 import "./Banner.sass"
 function Banner({ page, content }) {
     const imgSource = page === "home" ? BannerImgHome : BannerImgAbout

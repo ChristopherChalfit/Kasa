@@ -1,5 +1,5 @@
 import DataGallery from "../../data/logements.json";
-import Arrow from "../../assets/images/Arrow.svg";
+import Arrow from "../../assets/images/Arrow.webp";
 import "./Caroussel.sass";
 import { useParams } from "react-router-dom";
 import { useState } from "react";

@@ -1,4 +1,4 @@
-import Error404 from '../../assets/images/404.svg'
+import Error404 from '../../assets/images/404.webp'
 import { NavLink } from 'react-router-dom'
 import './Error.sass'
 function Error() {
