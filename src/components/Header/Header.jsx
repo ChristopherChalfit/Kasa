@@ -4,14 +4,14 @@ import Logos from '../../assets/images/Logo.webp'
 function Header() {
     return (
       <header className="header">
-        <NavLink to="/Kasa/">
+        <NavLink to="/">
             <img src={Logos}></img>
         </NavLink>
         <nav className='header__navbar'>
-            <NavLink to="/Kasa/">
+            <NavLink to="/">
                 Accueil
             </NavLink>
-            <NavLink to="/Kasa/about">
+            <NavLink to="/about">
                 A Propos
             </NavLink>
         </nav>
