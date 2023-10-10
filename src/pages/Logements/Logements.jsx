@@ -1,5 +1,4 @@
 import { useParams } from "react-router-dom";
-import DataGallery from "../../data/logements.json";
 import Collapse from "../../components/Collapse/Collapse";
 import Caroussel from "../../components/Caroussel/Caroussel";
 import Error from "../Error/Error";

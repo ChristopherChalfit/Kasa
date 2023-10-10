@@ -1,8 +1,11 @@
 @import '../../styles/_Var.sass'
+@import '../../styles/_Breakpoint.sass'
 .tags
     display: flex
     flex-direction: row
     gap: 20px
+    @include mobile
+        flex-wrap: wrap
     &--card
         background: #FF6060
         border-radius: 10px
